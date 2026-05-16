@@ -2,7 +2,7 @@
 #  port: 8082
 spring:
   application:
-    name: 2_Friend_Service
+    name: FriendService
   config:
     import: configserver:http://localhost:8084
 #  datasource:

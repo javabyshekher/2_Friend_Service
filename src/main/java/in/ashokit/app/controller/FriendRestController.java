@@ -23,7 +23,7 @@ public class FriendRestController {
             return ResponseEntity.badRequest().build();
     }
 
-    @GetMapping( value = "/friend-contacts/{phoneNumber}")
+    @GetMapping( value = "/friend-contact/{phoneNumber}")
     public List<Object[]> getFriendsContacts(@PathVariable Long phoneNumber) {
         return service.readFriendsContacts(phoneNumber);
     }
